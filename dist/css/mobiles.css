@@ -11,7 +11,7 @@
     padding-top: 2rem;
   }
 
-  #header-home .header-content {
+  body #header-home .header-content {
     display: none;
   }
 
