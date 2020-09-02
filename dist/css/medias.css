@@ -20,6 +20,10 @@
     flex-direction: column;
   }
 
+  body .home-a .lead {
+    padding: 0 1rem;
+  }
+
   body .home-a .grid-container > div {
     width: 100%;
   }
