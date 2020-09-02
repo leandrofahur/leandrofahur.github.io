@@ -112,6 +112,14 @@ img {
   background-color: var(--primary-color);
 }
 
+.botton-line-title {
+  display: block;
+  background: var(--secondary-color);
+  margin: 0 auto 1rem auto;
+  height: 2px;
+  width: 15rem;
+}
+
 /* Home */
 #header-home {
   background: url("../images/cover/02-cover.jpg") no-repeat center center/cover;
@@ -148,4 +156,14 @@ img {
 
 .main-nav ul li a {
   font-size: 1.2rem;
+}
+
+.main-nav ul li a:hover {
+  cursor: pointer;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.75rem;
+}
+
+.main-nav .logo a:hover {
+  color: var(--secondary-color);
 }
