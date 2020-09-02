@@ -54,7 +54,7 @@ img {
 
 .current {
   border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
 }
 
 .logo {
@@ -192,7 +192,7 @@ img {
 
 .main-nav ul li a:hover {
   cursor: pointer;
-  border-bottom: 3px solid var(--secondary-color);
+  border-bottom: 2px solid var(--light-color);
   padding-bottom: 0.75rem;
 }
 
