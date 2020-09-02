@@ -52,6 +52,11 @@ img {
   overflow: hidden;
 }
 
+.current {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 1rem;
+}
+
 .logo {
   font-size: 3rem;
 }

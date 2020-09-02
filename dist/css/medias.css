@@ -1,0 +1,26 @@
+/* Cellphones */
+@media (max-width: 500px) {
+  body #header-home {
+    height: 10rem;
+    border-bottom: 3px solid var(--secondary-color);
+  }
+
+  #header-home .main-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  #header-home .header-content {
+    display: none;
+  }
+
+  body .home-a .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body .home-a .grid-container > div {
+    width: 100%;
+  }
+}
