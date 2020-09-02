@@ -204,7 +204,7 @@ img {
 
 .home-a .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* grid-gap: 1rem; */
   justify-content: center;
   align-items: center;
@@ -215,11 +215,18 @@ img {
   padding: 3rem 0;
 }
 
+.home-a .grid-container > div a {
+  padding: 0.5rem 1rem;
+}
+
 .home-a .grid-container > div i {
   color: var(--light-color);
   background-color: var(--dark-color);
   border-radius: 50%;
-  padding: 2rem;
+  /* padding: 2rem; */
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
 }
 
 .home-a .grid-container > div:nth-child(odd) {
