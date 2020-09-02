@@ -223,10 +223,17 @@ img {
   color: var(--light-color);
   background-color: var(--dark-color);
   border-radius: 50%;
-  /* padding: 2rem; */
   width: 100px;
   height: 100px;
   padding-top: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-a .grid-container > div i:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  /* border: 3px solid var(--dark-color); */
+  transform: scale(1.1);
 }
 
 .home-a .grid-container > div:nth-child(odd) {
