@@ -23,4 +23,14 @@
   body .home-a .grid-container > div {
     width: 100%;
   }
+
+  body #main-footer {
+    height: 7rem;
+  }
+
+  body #main-footer .footer-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 0;
+  }
 }
