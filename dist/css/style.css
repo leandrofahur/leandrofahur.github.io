@@ -6,7 +6,8 @@
   --primary-color: #c72727;
   --secondary-color: #ffbc00;
   --dark-color: #333;
-  --light-color: #f4f4f4;
+  --gray-color: #ccc;
+  --light-color: #f3f3f3;
   --max-width: 1280px;
 }
 
@@ -128,6 +129,14 @@ img {
   width: 15rem;
 }
 
+.botton-line {
+  display: block;
+  background: var(--secondary-color);
+  margin: 0 auto 1rem auto;
+  height: 2px;
+  width: 5rem;
+}
+
 /* Home */
 #header-home {
   background: url("../images/cover/02-cover.jpg") no-repeat center center/cover;
@@ -147,7 +156,7 @@ img {
 #header-home .header-content .reference {
   display: block;
   text-align: end;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 #header-home .header-content .reference a {
@@ -184,6 +193,41 @@ img {
 
 .main-nav .logo a:hover {
   color: var(--secondary-color);
+}
+
+/* Main */
+/* Home A */
+.home-a h2,
+.home-a p {
+  text-align: center;
+}
+
+.home-a .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 1rem; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-a .grid-container > div {
+  padding: 3rem 0;
+}
+
+.home-a .grid-container > div i {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.home-a .grid-container > div:nth-child(odd) {
+  background-color: var(--light-color);
+}
+
+.home-a .grid-container > div:nth-child(even) {
+  background-color: var(--gray-color);
 }
 
 /* Footer */
