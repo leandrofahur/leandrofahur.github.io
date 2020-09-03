@@ -37,4 +37,14 @@
     flex-direction: column-reverse;
     padding: 1rem 0;
   }
+
+  body .home-b .grid-container {
+    display: grid;
+    grid-template-areas: "profile" "description";
+    grid-gap: 1rem;
+  }
+
+  body .home-b .grid-container img {
+    width: 100%;
+  }
 }
