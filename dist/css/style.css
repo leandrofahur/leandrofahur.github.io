@@ -30,6 +30,7 @@ h2,
 h3 {
   text-transform: uppercase;
   font-weight: 400;
+  text-align: center;
 }
 
 ul {
@@ -149,7 +150,7 @@ img {
 }
 
 #header-home .header-content {
-  padding-top: 50%;
+  padding-top: 21rem;
   color: #fff;
   text-align: center;
 }
@@ -207,6 +208,10 @@ img {
   text-align: center;
 }
 
+.home-a p {
+  font-size: 1.1rem;
+}
+
 .home-a .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -247,6 +252,48 @@ img {
 
 .home-a .grid-container > div:nth-child(even) {
   background-color: var(--gray-color);
+}
+
+/* Home B */
+.home-b h2,
+.home-b p {
+  text-align: center;
+}
+
+.home-b {
+  padding: 0 2rem;
+}
+
+.home-b p {
+  font-size: 1.1rem;
+}
+
+.home-b .grid-container {
+  display: grid;
+  grid-template-areas: "profile description description";
+  grid-gap: 1rem;
+}
+
+.home-b .grid-container p {
+  /* font-size: 1rem; */
+  text-align: justify;
+}
+
+.home-b .grid-container a {
+  display: inline-block;
+}
+
+.home-b .grid-container .content {
+  grid-area: description;
+  background-color: var(--light-color);
+  border-left: 3px solid var(--secondary-color);
+  padding: 1rem;
+}
+
+.home-b .grid-container img {
+  grid-area: profile;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 /* Footer */
