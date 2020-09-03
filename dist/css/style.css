@@ -150,9 +150,8 @@ img {
 }
 
 #header-home .header-content {
-  padding-top: 50%;
+  padding-top: 21rem;
   color: #fff;
-
   text-align: center;
 }
 
@@ -276,8 +275,12 @@ img {
 }
 
 .home-b .grid-container p {
-  font-size: 0.9rem;
+  /* font-size: 1rem; */
   text-align: justify;
+}
+
+.home-b .grid-container a {
+  display: inline-block;
 }
 
 .home-b .grid-container .content {
@@ -289,6 +292,8 @@ img {
 
 .home-b .grid-container img {
   grid-area: profile;
+  max-width: 320px;
+  max-height: 320px;
 }
 
 /* Footer */
