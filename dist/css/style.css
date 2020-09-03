@@ -30,7 +30,7 @@ h2,
 h3 {
   text-transform: uppercase;
   font-weight: 400;
-  text-align: center;
+  /* text-align: center; */
 }
 
 ul {
@@ -274,6 +274,10 @@ img {
   grid-gap: 1rem;
 }
 
+.home-b .grid-container h3 {
+  text-align: center;
+}
+
 .home-b .grid-container p {
   /* font-size: 1rem; */
   text-align: justify;
@@ -294,6 +298,24 @@ img {
   grid-area: profile;
   max-width: 350px;
   max-height: 350px;
+}
+
+/* Home C */
+.home-c h2,
+.home-c p {
+  text-align: center;
+}
+
+.home-c .contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.home-c .contact > div {
+  padding: 2rem;
+  color: var(--light-color);
 }
 
 /* Footer */

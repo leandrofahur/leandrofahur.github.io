@@ -11,6 +11,10 @@
     padding-top: 2rem;
   }
 
+  #header-home .main-nav ul li {
+    padding: 2rem 0.75rem;
+  }
+
   body #header-home .header-content {
     display: none;
   }
@@ -46,5 +50,18 @@
 
   body .home-b .grid-container img {
     width: 100%;
+  }
+
+  body .home-c .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body .home-c .contact > div {
+    border-bottom: 1px solid var(--light-color);
+  }
+
+  body .home-c .contact > div:last-child {
+    border-bottom: none;
   }
 }
