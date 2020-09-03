@@ -47,4 +47,13 @@
   body .home-b .grid-container img {
     width: 100%;
   }
+
+  body .home-c .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body .home-c .contact > div {
+    border-bottom: 1px solid var(--light-color);
+  }
 }
