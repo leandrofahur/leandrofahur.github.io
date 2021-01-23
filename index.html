@@ -10,9 +10,9 @@
 
   url = protocol + "//" + host + ":" + port + path;
   console.log(url);
-  // const socket = io("http://localhost:80");
-  // socket.on("message", (msg) => {
-  //   console.log(msg);
-  //   socket.emit("message", { msg: "I received your msg" });
-  // });
+  const socket = io(url, options);
+  socket.on("message", (msg) => {
+    console.log(msg);
+    socket.emit("message", { msg: "I received your msg" });
+  });
 </script>
