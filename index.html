@@ -10,7 +10,7 @@
 
   url = protocol + "//" + host + ":" + 80 + path;
   console.log(url);
-  const socket = io();
+  const socket = io.connect(url, options);
   socket.on("message", (msg) => {
     console.log(msg);
     socket.emit("message", { msg: "I received your msg" });
