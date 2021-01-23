@@ -8,7 +8,7 @@
     url,
     options = {};
 
-  url = protocol + "//" + host + ":" + port + path;
+  url = protocol + "//" + host + ":" + 80 + path;
   console.log(url);
   const socket = io(url, options);
   socket.on("message", (msg) => {
