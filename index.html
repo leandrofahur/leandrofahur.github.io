@@ -8,9 +8,9 @@
     url,
     options = {};
 
-  url = protocol + "//" + host + ":" + 80 + path;
+  url = protocol + "//" + host + ":" + port + path;
   console.log(url);
-  const socket = io.connect(url, options);
+  const socket = io.connect("/");
   socket.on("message", (msg) => {
     console.log(msg);
     socket.emit("message", { msg: "I received your msg" });
