@@ -1,20 +1,10 @@
-<meta
+<!-- <meta
   http-equiv="Content-Security-Policy"
   content="upgrade-insecure-requests"
 />
 
-<!-- <script src="/socket.io/socket.io.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
 <script>
-  // var port = window.location.port,
-  //   host = window.location.hostname,
-  //   protocol = window.location.protocol,
-  //   path = "/",
-  //   url,
-  //   options = {};
-
-  // url = protocol + "//" + host + ":" + port + path;
-  // console.log(url);
   const socket = io.connect("http://192.168.0.28:80", {
     secure: true,
     rejectUnauthorized: false,
@@ -23,4 +13,25 @@
     console.log(msg);
     socket.emit("message", { msg: "I received your msg" });
   });
-</script>
+</script> -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+<script>
+  var socket = io.connect("http://184.65.214.227:3000");
+
+  var message = document.getElementById("message");
+  var submit = document.getElementById("submit");
+  var output = document.getElementById("output");
+
+  submit.addEventListener("click", function () {
+    console.log(message.value);
+
+    socket.emit("chat", message.value);
+    message.value = message.defaultValue;
+  });
+
+  socket.on("chat", function (message) {
+    console.log("received message: " + message);
+    output.innerHTML += "<p>" + message + "</p>";
+  });
+</script> -->
