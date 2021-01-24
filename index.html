@@ -1,16 +1,19 @@
 <!-- <script src="/socket.io/socket.io.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
 <script>
-  var port = window.location.port,
-    host = window.location.hostname,
-    protocol = window.location.protocol,
-    path = "/",
-    url,
-    options = {};
+  // var port = window.location.port,
+  //   host = window.location.hostname,
+  //   protocol = window.location.protocol,
+  //   path = "/",
+  //   url,
+  //   options = {};
 
-  url = protocol + "//" + host + ":" + port + path;
-  console.log(url);
-  const socket = io.connect("/");
+  // url = protocol + "//" + host + ":" + port + path;
+  // console.log(url);
+  const socket = io.connect("https://184.65.214.227:8000", {
+    secure: true,
+    rejectUnauthorized: false,
+  });
   socket.on("message", (msg) => {
     console.log(msg);
     socket.emit("message", { msg: "I received your msg" });
